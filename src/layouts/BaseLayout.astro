@@ -1,0 +1,140 @@
+---
+import Header from '../components/Header.astro';
+
+import '../input.css';
+import '@fontsource/inter';
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/site-icons/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="/site-icons/favicon.png"
+			sizes="24x24"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="/site-icons/favicon.png"
+			sizes="32x32"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="/site-icons/favicon.png"
+			sizes="48x48"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="/site-icons/favicon.png"
+			sizes="96x96"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="/site-icons/favicon.png"
+			sizes="128x128"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="/site-icons/favicon.png"
+			sizes="196x196"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/site-icons/primrose-logo-57x57.png"
+			sizes="57x57"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/site-icons/primrose-logo-60x60.png"
+			sizes="60x60"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/site-icons/primrose-logo-72x72.png"
+			sizes="72x72"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/site-icons/primrose-logo-76x76.png"
+			sizes="76x76"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/site-icons/primrose-logo-114x114.png"
+			sizes="114x114"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/site-icons/primrose-logo-120x120.png"
+			sizes="120x120"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/site-icons/primrose-logo-144x144.png"
+			sizes="144x144"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/site-icons/primrose-logo-152x152.png"
+			sizes="152x152"
+		/>
+		<meta
+			name="application-name"
+			content="Primrose - Practice Management Tools and Services | Digital Practice Hub"
+		/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta
+			name="msapplication-square64x64logo"
+			content="site-icons/primrose-logo-64x64.png"
+		/>
+		<meta
+			name="msapplication-square70x70logo"
+			content="site-icons/primrose-logo-70x70.png"
+		/>
+		<meta
+			name="msapplication-TileImage"
+			content="site-icons/primrose-logo-144x144.png"
+		/>
+		<meta
+			name="msapplication-square150x150logo"
+			content="site-icons/primrose-logo-150x150.png"
+		/>
+		<meta
+			name="msapplication-square310x150logo"
+			content="site-icons/primrose-logo-310x150.png"
+		/>
+		<meta
+			name="msapplication-square310x310logo"
+			content="site-icons/primrose-logo-310x310.png"
+		/>
+	</head>
+	<body>
+		<Header />
+		<slot />
+	</body>
+</html>
+
+<script src="../../node_modules/preline/dist/preline.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<!-- <script
+	type="text/javascript"
+	id="hs-script-loader"
+	async
+	defer
+	src="//js-na1.hs-scripts.com/20359032.js"
+></script> -->
+<!-- End of HubSpot Embed Code -->
