@@ -5,23 +5,24 @@
 body {
 	@font-face {
 		font-family: Aeonik;
-		src: url('public/aeonik-font/Aeonik-Regular.otf') format('opentype');
+		/* src: url('public/aeonik-font/Aeonik-Regular.otf') format('opentype'); */
+		src: url('/public/aeonik-font/Aeonik-Regular.otf') format('opentype');
 	}
 
 	@font-face {
 		font-family: Aeonik;
 		font-weight: medium;
-		src: url('public/Aeonik-Medium.otf') format('opentype');
+		src: url('/public/aeonik-font/Aeonik-Medium.otf') format('opentype');
 	}
 	@font-face {
 		font-family: Aeonik;
 		font-weight: bold;
-		src: url('public/Aeonik-Bold.otf') format('opentype');
+		src: url('/public/aeonik-font/Aeonik-Bold.otf') format('opentype');
 	}
 	@font-face {
 		font-family: Aeonik;
 		font-weight: black;
-		src: url('public/Aeonik-Black.otf') format('opentype');
+		src: url('/public/aeonik-font/Aeonik-Black.otf') format('opentype');
 	}
 
 	font-family: 'Aeonik', 'Inter', sans-serif;
