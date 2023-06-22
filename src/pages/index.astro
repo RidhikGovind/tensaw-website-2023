@@ -70,43 +70,6 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 			background-position: 100% 50%;
 		}
 	}
-
-	.banner-ctaContainer {
-		background: no-repeat url('/images/banner-cta-image.png');
-		background-size: cover;
-		background-position: center;
-		width: 100%;
-		height: 100%;
-		max-width: 100%;
-		position: relative;
-	}
-
-	.banner-ctaContainer--Overlay {
-		position: absolute; /* Sit on top of the page content */
-		width: 100%; /* Full width (cover the whole page) */
-		height: 100%; /* Full height (cover the whole page) */
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
-		z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-		border-radius: 8px;
-	}
-
-	.banner-ctaContainer--content {
-		width: 100%;
-		height: 100%;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		z-index: 20;
-	}
 </style>
 
 <BaseLayout title="Tensaw.health | No hassle patient marketing for physicians">
@@ -508,7 +471,9 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 			</div>
 			<!-- End CTA Banner -->
 
-			<footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+			<footer
+				class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-slate-100"
+			>
 				<!-- Grid -->
 				<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-10">
 					<div class="col-span-full hidden lg:col-span-1 lg:block">
