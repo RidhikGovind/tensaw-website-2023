@@ -355,9 +355,19 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 			<div
 				class="max-w-[85rem] md:max-w-7xl px-4 py-12 sm:px-6 lg:px-16 lg:pb-16 lg:py-16 mx-auto"
 			>
-				<div class="hs-accordion-group">
+				<!-- Title -->
+				<div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+					<h2
+						class="text-2xl font-bold md:text-3xl md:leading-tight text-gray-800 dark:text-gray-200"
+					>
+						Explore complete feature list
+					</h2>
+				</div>
+				<!-- End Title -->
+
+				<div class="hs-accordion-group mb-12 flex flex-col space-y-5">
 					<div
-						class="hs-accordion active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+						class="hs-accordion active bg-white border -mt-px rounded-md dark:bg-gray-800 dark:border-gray-700"
 						id="hs-bordered-heading-one"
 					>
 						<button
@@ -410,7 +420,7 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 									<p class="">
 										<span
 											class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
-											><span class="text-xl">$</span>250</span
+											><span class="text-xl">$</span>1000</span
 										><span class="text-xl">/month</span>
 									</p>
 
@@ -796,7 +806,7 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 					</div>
 
 					<div
-						class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+						class="hs-accordion bg-white border -mt-px rounded-md dark:bg-gray-800 dark:border-gray-700"
 						id="hs-bordered-heading-two"
 					>
 						<button
@@ -843,63 +853,843 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 							class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
 							aria-labelledby="hs-bordered-heading-two"
 						>
-							<div class="pb-4 px-5">
-								<p class="text-gray-800 dark:text-gray-200">
-									<em>This is the second item's accordion body.</em> It is hidden
-									by default, until the collapse plugin adds the appropriate classes
-									that we use to style each element. These classes control the overall
-									appearance, as well as the showing and hiding via CSS transitions.
-								</p>
+							<div class="p-6 pt-2 py-8 grid gap-8">
+								<div class="flex justify-between items-center">
+									<p class="">
+										<span
+											class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+											><span class="text-xl">$</span>250</span
+										><span class="text-xl">/month</span>
+									</p>
+
+									<ButtonDefaultHeader
+										text="Nurture your practice"
+										style="margin: 0;"
+									/>
+								</div>
+
+								<div class="grid gap-4">
+									<div>
+										<h3
+											class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+										>
+											Social media
+										</h3>
+										<p class="mt-1 text-gray-600 dark:text-gray-400">
+											Keep your social profiles full of fresh, engaging content
+										</p>
+									</div>
+
+									<div class="grid grid-rows-1 gap-4">
+										<ul class="grid grid-cols-4 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Build Facebook and Instagram accounts</span
+												>
+											</li>
+
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Publish informational content (10 posts/month)
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="grid gap-4">
+									<div>
+										<h3
+											class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+										>
+											SEO - Off Page
+										</h3>
+										<p class="mt-1 text-gray-600 dark:text-gray-400">
+											Establish credibility with Search engines and rank higher
+											in search results and get found more often.
+										</p>
+									</div>
+
+									<div class="grid gap-4">
+										<ul class="grid grid-cols-4 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Analyze backlinks for your competition</span
+												>
+											</li>
+
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Build new links
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="grid gap-4">
+									<div>
+										<h3
+											class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+										>
+											Managed Reviews
+										</h3>
+										<p class="mt-1 text-gray-600 dark:text-gray-400">
+											We build your online reputation through patient reviews
+											and manage reviews
+										</p>
+									</div>
+
+									<div class="grid grid-rows-1 gap-4">
+										<ul class="grid grid-cols-3 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Email or text patients get reviews after appointment</span
+												>
+											</li>
+
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Respond to positive and negative patient reviews
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Validate Google page
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="grid gap-4">
+									<div>
+										<h3
+											class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+										>
+											Manage inbound Chat
+										</h3>
+										<p class="mt-1 text-gray-600 dark:text-gray-400">
+											Enhance User Interaction and Increase Conversion Rates for
+											Optimal Results
+										</p>
+									</div>
+
+									<div class="grid grid-rows-1 gap-4">
+										<ul class="grid grid-cols-3 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Increase website conversion rates</span
+												>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Capture lead information for follow-up</span
+												>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Engage with website visitors in real-time
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="hs-accordion bg-white border -mt-px rounded-md dark:bg-gray-800 dark:border-gray-700"
+						id="hs-bordered-heading-two"
+					>
+						<button
+							class="hs-accordion-toggle hs-accordion-active:text-[#FD3E81] inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+							aria-controls="hs-basic-bordered-collapse-two"
+						>
+							<svg
+								class="hs-accordion-active:hidden hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+								<path
+									d="M8 15.36L8 2.35999"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							<svg
+								class="hs-accordion-active:block hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							GROWTH PLAN
+						</button>
+						<div
+							id="hs-basic-bordered-collapse-two"
+							class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+							aria-labelledby="hs-bordered-heading-two"
+						>
+							<div class="p-6 pt-2 py-8 grid gap-8">
+								<div class="flex justify-between items-center">
+									<p class="">
+										<span
+											class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+											><span class="text-xl">$</span>500</span
+										><span class="text-xl">/month</span>
+									</p>
+
+									<ButtonDefaultHeader
+										text="Start Growing Now"
+										style="margin: 0;"
+									/>
+								</div>
+
+								<div class="grid gap-4">
+									<div>
+										<h3
+											class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+										>
+											Advertising
+										</h3>
+										<p class="mt-1 text-gray-600 dark:text-gray-400">
+											Give your growth a turbo boost and acquire patients at the
+											fastest rate.
+										</p>
+									</div>
+
+									<div class="grid grid-rows-1 gap-4">
+										<ul class="grid grid-cols-4 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Build ad campaigns with keywords, bids and
+													optimizations</span
+												>
+											</li>
+
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Custom landing page to identify prospects
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Emails for nurturing prospects
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Print Ads in local newspaper and church bulletin
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="grid gap-4">
+									<div>
+										<h3
+											class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+										>
+											Promotions
+										</h3>
+										<p class="mt-1 text-gray-600 dark:text-gray-400">
+											Establish credibility with Search engines and rank higher
+											in search results and get found more often.
+										</p>
+									</div>
+
+									<div class="grid gap-4">
+										<ul class="grid grid-cols-4 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Analyze customer lifetime value</span
+												>
+											</li>
+
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Identify profitable services
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Build a new promotion each month
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="grid gap-4">
+									<div>
+										<h3
+											class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+										>
+											Email Campaigns
+										</h3>
+										<p class="mt-1 text-gray-600 dark:text-gray-400">
+											Remind patients to do vaccines and follow ups. Send custom
+											marketing and offers to your patients to increase
+											utilization and revenue.
+										</p>
+									</div>
+
+									<div class="grid grid-rows-1 gap-4">
+										<ul class="grid grid-cols-3 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Integrated with your EMR</span
+												>
+											</li>
+
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Up to 10,000 emails each month
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Up to 2 new email campaigns
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="grid gap-4">
+									<div>
+										<h3
+											class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+										>
+											Custom content - 2 blogs/month
+										</h3>
+										<p class="mt-1 text-gray-600 dark:text-gray-400">
+											Add fresh content that is custom created for you.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="hs-accordion bg-white border -mt-px rounded-md dark:bg-gray-800 dark:border-gray-700"
+						id="hs-bordered-heading-two"
+					>
+						<button
+							class="hs-accordion-toggle hs-accordion-active:text-[#FD3E81] inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+							aria-controls="hs-basic-bordered-collapse-two"
+						>
+							<svg
+								class="hs-accordion-active:hidden hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+								<path
+									d="M8 15.36L8 2.35999"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							<svg
+								class="hs-accordion-active:block hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							OFFLINE MARKETING PLAN
+						</button>
+						<div
+							id="hs-basic-bordered-collapse-two"
+							class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+							aria-labelledby="hs-bordered-heading-two"
+						>
+							<div class="p-6 pt-2 py-8 grid gap-8">
+								<div class="flex justify-between items-center">
+									<p class="">
+										<span
+											class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+											><span class="text-xl">$</span>500</span
+										><span class="text-xl">/month</span>
+									</p>
+
+									<ButtonDefaultHeader
+										text="Start Connecting Now"
+										style="margin: 0;"
+									/>
+								</div>
+
+								<div class="grid gap-4">
+									<div class="grid grid-rows-2 gap-4">
+										<ul class="grid grid-cols-4 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Designs that stand out</span
+												>
+											</li>
+
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Homepage, Providers, Contact Us
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Service page (up to 8)
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Testimonials page
+												</span>
+											</li>
+										</ul>
+										<ul class="grid grid-cols-4 gap-4">
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Dynamically display top Google reviews</span
+												>
+											</li>
+
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Patient self service (coming soon)
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Free web chat (coming soon)
+												</span>
+											</li>
+											<li class="flex space-x-1">
+												<svg
+													class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+														fill="currentColor"></path>
+												</svg>
+												<span class="text-gray-800 dark:text-gray-400">
+													Free Hosting for two years
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<BannerFooterSection />
 			</div>
 		</div>
-	</main>
 
-	<!-- Calendly inline widget begin -->
-	<div class="calendly-widget-overlay calendly-close-button">
-		<div
-			class="calendly-inline-widget"
-			style="min-width: 320px; height: 680px"
-			data-auto-load="false"
-		>
-			<h2 class="title is-size-5 calendly-widget-close">Close X</h2>
-			<script
-				type="text/javascript"
-				src="https://assets.calendly.com/assets/external/widget.js"
-			></script>
-			<script>
-				Calendly.initInlineWidget({
-					url: 'https://calendly.com/trillium-vineeth/primrose-discovery',
-				});
-			</script>
+		<BannerFooterSection />
+
+		<!-- Calendly inline widget begin -->
+		<div class="calendly-widget-overlay calendly-close-button">
+			<div
+				class="calendly-inline-widget"
+				style="min-width: 320px; height: 680px"
+				data-auto-load="false"
+			>
+				<h2 class="title is-size-5 calendly-widget-close">Close X</h2>
+				<script
+					type="text/javascript"
+					src="https://assets.calendly.com/assets/external/widget.js"
+				></script>
+				<script>
+					Calendly.initInlineWidget({
+						url: 'https://calendly.com/trillium-vineeth/primrose-discovery',
+					});
+				</script>
+			</div>
 		</div>
-	</div>
-	<!-- Calendly inline widget end -->
+		<!-- Calendly inline widget end -->
 
-	<script>
-		const calendlyCloseButton = document.querySelector(
-			'.calendly-close-button'
-		);
+		<script>
+			const calendlyCloseButton = document.querySelector(
+				'.calendly-close-button'
+			);
 
-		calendlyCloseButton.addEventListener('click', () => {
-			document.querySelector('.calendly-widget-overlay').style.display = 'none';
-		});
-
-		const calendlyOpenButton = document.querySelectorAll(
-			'.calendly-open-button'
-		);
-
-		// Handle clicks on each button.
-		calendlyOpenButton.forEach((button) => {
-			button.addEventListener('click', () => {
+			calendlyCloseButton.addEventListener('click', () => {
 				document.querySelector('.calendly-widget-overlay').style.display =
-					'block';
+					'none';
 			});
-		});
-	</script>
+
+			const calendlyOpenButton = document.querySelectorAll(
+				'.calendly-open-button'
+			);
+
+			// Handle clicks on each button.
+			calendlyOpenButton.forEach((button) => {
+				button.addEventListener('click', () => {
+					document.querySelector('.calendly-widget-overlay').style.display =
+						'block';
+				});
+			});
+		</script>
+	</main>
 </BaseLayout>

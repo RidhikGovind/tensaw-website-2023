@@ -1,0 +1,1875 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ButtonDefault from '../components/ButtonDefault.astro';
+import BannerFooterSection from '../components/BannerFooterSection.astro';
+import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
+---
+
+<script
+	type="text/javascript"
+	src="https://assets.calendly.com/assets/external/widget.js"
+></script>
+
+<style>
+	/* ------------ CALENDLY WIDGET STYLES ------------------- */
+	.calendly-widget-overlay {
+		position: fixed;
+		display: none;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 9999;
+		cursor: pointer;
+	}
+
+	.calendly-inline-widget {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		/* display: none; */
+	}
+
+	.calendly-widget-close {
+		z-index: 999999;
+		padding: 2rem;
+		color: #fff;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.testimonial-container {
+		background: no-repeat url('/images/wave-pink.svg');
+		background-size: contain;
+		background-position: bottom right;
+		background-color: #ffecf7;
+	}
+
+	@media (max-width: 520px) {
+		.testimonial-container {
+			background-position: bottom -40px right -20px;
+		}
+	}
+</style>
+
+<BaseLayout title="Pricing for Tensaw | Tensaw.health">
+	<main>
+		<div class="container md:max-w-full">
+			<!-- Hero -->
+			<div class="relative bg-neutral-100">
+				<!-- Gradients -->
+				<!-- <div aria-hidden="true" class="flex absolute -top-48 left-0 -z-[1]">
+					<div
+						class="bg-teal-200 opacity-30 blur-3xl w-[1536px] h-[600px] dark:bg-teal-900 dark:opacity-20"
+					>
+					</div>
+				</div> -->
+				<!-- End Gradients -->
+
+				<div
+					class="max-w-[85rem] md:max-w-7xl px-4 py-12 sm:px-6 lg:px-16 lg:pb-16 lg:py-16 mx-auto"
+				>
+					<!-- Grid -->
+					<div class="max-w-5xl mx-auto">
+						<div>
+							<h1
+								class="block text-5xl text-center tracking-tighter font-bold text-slate-900 sm:text-4xl lg:text-8xl lg:leading-none dark:text-white"
+							>
+								Affordable physician marketing for <span
+									class="text-transparent bg-clip-text bg-gradient-to-r from-[#FD3E81] to-[#486DD0] background-animate"
+									>growth</span
+								>
+							</h1>
+						</div>
+						<!-- End Col -->
+					</div>
+					<!-- End Grid -->
+
+					<!-- Grid -->
+					<div
+						class="mt-6 md:mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-3 xl:gap-6 lg:items-top"
+					>
+						<!-- Card -->
+						<div
+							class="flex flex-col bg-white border border-gray-200 text-left rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+						>
+							<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
+								BASIC
+							</h4>
+
+							<p class="mt-6 mb-3">
+								<span
+									class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+									><span class="text-xl">$</span>1000</span
+								>
+							</p>
+
+							<p class="text-base text-gray-700">
+								One time payment. Basic plan. Maximum Value.
+							</p>
+							<!-- <a
+								class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
+								onclick="openCalendlyWidget()"
+								href="#calendly"
+							>
+								Contact us
+							</a> -->
+
+							<ButtonDefault text="Start with Basics" />
+
+							<ul class="mt-7 space-y-2.5 text-sm">
+								<li class="flex space-x-2">
+									<span
+										class="text-gray-800 text-lg dark:text-gray-400 font-semibold"
+									>
+										Basic includes
+									</span>
+								</li>
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Create a <strong>Website</strong> that Converts</span
+									>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										<strong>On-Page SEO</strong> for Better Results</span
+									>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Maximize Your Local Online Presence using <strong
+											>Local Search
+										</strong> for Better Results</span
+									>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Get Listed, Get Discovered Fast using
+										<strong>Directory Listing</strong>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<!-- End Card -->
+
+						<!-- Card -->
+						<div
+							class="flex flex-col text-left bg-white border border-gray-200 rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+						>
+							<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
+								NURTURE
+							</h4>
+
+							<p class="mt-6 mb-3">
+								<span
+									class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+									><span class="text-xl">$</span>250</span
+								><span class="text-xl">/month</span>
+							</p>
+							<p class="text-base text-gray-700">
+								Transform Leads into Loyal Customers.
+							</p>
+
+							<ButtonDefault text="Nurture your practice" />
+
+							<ul class="mt-7 space-y-2.5 text-sm">
+								<li class="flex space-x-2">
+									<span
+										class="text-gray-800 text-lg dark:text-gray-400 font-semibold"
+									>
+										Basic includes
+									</span>
+								</li>
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Upgrade your <strong>Social media</strong> presence
+									</span>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Build Trust, Get More Customers using
+										<strong>Managed Reviews</strong></span
+									>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Convert Chats to Happy Customers using <strong
+											>Managed Inbound Chat
+										</strong>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<!-- End Card -->
+
+						<!-- Card -->
+						<div
+							class="flex flex-col bg-white border border-gray-200 rounded-2xl text-left p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+						>
+							<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
+								GROWTH
+							</h4>
+
+							<p class="mt-6 mb-3">
+								<!-- <span class="block">Fee</span> -->
+								<span
+									class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+									><span class="text-xl">$</span>500</span
+								><span class="text-xl">/month</span>
+							</p>
+							<p class="text-base text-gray-700">
+								Unlock Your Clinic's Full Potential.
+							</p>
+
+							<ButtonDefault text="Start your growth now" />
+
+							<ul class="mt-7 space-y-2.5 text-sm">
+								<li class="flex space-x-2">
+									<span
+										class="text-gray-800 text-lg dark:text-gray-400 font-semibold"
+									>
+										Nurture features plus
+									</span>
+								</li>
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Connect with Patients through <strong>Advertising</strong>
+									</span>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Win Patients with Strategic <strong>Promotion</strong>
+									</span>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Engage Patients with Relevant <strong> Blog Content</strong>
+									</span>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Get results with effective
+										<strong> email marketing</strong>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<!-- End Card -->
+
+						<!-- Card -->
+						<div
+							class="flex flex-col bg-white border border-gray-200 rounded-2xl text-left p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+						>
+							<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
+								OFFLINE MARKETING
+							</h4>
+
+							<p class="mt-6 mb-3">
+								<!-- <span class="block">Fee</span> -->
+								<span
+									class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+									><span class="text-xl">$</span>250</span
+								><span class="text-xl">/month</span>
+							</p>
+							<p class="text-base text-gray-700">
+								Boost Your Brand with Strategic Offline Marketing
+							</p>
+
+							<ButtonDefault text="Start Connecting Now" />
+
+							<ul class="mt-7 space-y-2.5 text-sm">
+								<li class="flex space-x-2">
+									<span
+										class="text-gray-800 text-lg dark:text-gray-400 font-semibold"
+									>
+										Offline marketing includes
+									</span>
+								</li>
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Schedule <strong>PCP lunches</strong>
+									</span>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										<strong>Advertise</strong> in local print media
+									</span>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										<strong> Collaborate</strong> with community events
+									</span>
+								</li>
+
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Disease-specific <strong> patient brochures</strong>
+									</span>
+								</li>
+								<li class="flex space-x-2">
+									<img src="/icons/pageicons/check-circle-pink.svg" alt="" />
+									<span class="text-gray-800 dark:text-gray-400">
+										Concise <strong> physician care brochures</strong>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<!-- End Card -->
+					</div>
+					<!-- End Grid -->
+				</div>
+			</div>
+			<!-- End Hero -->
+
+			<!-- Pricing Details Accordion -->
+			<div
+				class="max-w-[85rem] md:max-w-7xl px-4 py-12 sm:px-6 lg:px-16 lg:pb-16 lg:py-16 mx-auto"
+			>
+				<!-- Title -->
+				<div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+					<h2
+						class="text-2xl font-bold md:text-3xl md:leading-tight text-gray-800 dark:text-gray-200"
+					>
+						Explore complete feature list
+					</h2>
+				</div>
+				<!-- End Title -->
+
+				<div class="hs-accordion-group">
+					<div
+						class="hs-accordion active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+						id="hs-bordered-heading-one"
+					>
+						<button
+							class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+							aria-controls="hs-basic-bordered-collapse-one"
+						>
+							<svg
+								class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+								<path
+									d="M8 15.36L8 2.35999"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							<svg
+								class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							Accordion #1
+						</button>
+						<div
+							id="hs-basic-bordered-collapse-one"
+							class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+							aria-labelledby="hs-bordered-heading-one"
+						>
+							<div class="pb-4 px-5">
+								<p class="text-gray-800 dark:text-gray-200">
+									<em>This is the third item's accordion body.</em> It is hidden
+									by default, until the collapse plugin adds the appropriate classes
+									that we use to style each element. These classes control the overall
+									appearance, as well as the showing and hiding via CSS transitions.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+						id="hs-bordered-heading-two"
+					>
+						<button
+							class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+							aria-controls="hs-basic-bordered-collapse-two"
+						>
+							<svg
+								class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+								<path
+									d="M8 15.36L8 2.35999"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							<svg
+								class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							Accordion #2
+						</button>
+						<div
+							id="hs-basic-bordered-collapse-two"
+							class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+							aria-labelledby="hs-bordered-heading-two"
+						>
+							<div class="pb-4 px-5">
+								<p class="text-gray-800 dark:text-gray-200">
+									<em>This is the second item's accordion body.</em> It is hidden
+									by default, until the collapse plugin adds the appropriate classes
+									that we use to style each element. These classes control the overall
+									appearance, as well as the showing and hiding via CSS transitions.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+						id="hs-bordered-heading-three"
+					>
+						<button
+							class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+							aria-controls="hs-basic-bordered-collapse-three"
+						>
+							<svg
+								class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+								<path
+									d="M8 15.36L8 2.35999"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							<svg
+								class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1.5 8.85999L14.5 8.85998"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"></path>
+							</svg>
+							Accordion #3
+						</button>
+						<div
+							id="hs-basic-bordered-collapse-three"
+							class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+							aria-labelledby=" hs-bordered-heading-three"
+						>
+							<div class="pb-4 px-5">
+								<p class="text-gray-800 dark:text-gray-200">
+									<em>This is the first item's accordion body.</em> It is hidden
+									by default, until the collapse plugin adds the appropriate classes
+									that we use to style each element. These classes control the overall
+									appearance, as well as the showing and hiding via CSS transitions.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="hs-accordion-group mb-12 grid grid-rows-4 gap-6">
+						<div
+							class="hs-accordion active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+							id="hs-bordered-heading-one"
+						>
+							<button
+								class="hs-accordion-toggle hs-accordion-active:text-[#FD3E81] inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-bordered-collapse-one"
+							>
+								<svg
+									class="hs-accordion-active:hidden hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 8.85999L14.5 8.85998"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+									<path
+										d="M8 15.36L8 2.35999"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 8.85999L14.5 8.85998"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								BASIC PLAN
+							</button>
+
+							<div
+								id="hs-basic-bordered-collapse-one"
+								class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-bordered-heading-one"
+							>
+								<div class="p-6 pt-2 py-8 grid gap-8">
+									<div class="flex justify-between items-center">
+										<p class="">
+											<span
+												class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+												><span class="text-xl">$</span>1000</span
+											><span class="text-xl">/month</span>
+										</p>
+
+										<ButtonDefaultHeader
+											text="Start with Basics"
+											style="margin: 0;"
+										/>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Website
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Custom website design to impress patients.
+											</p>
+										</div>
+
+										<div class="grid grid-rows-2 gap-4">
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Designs that stand out</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Homepage, Providers, Contact Us
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Service page (up to 8)
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Testimonials page
+													</span>
+												</li>
+											</ul>
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Dynamically display top Google reviews</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Patient self service (coming soon)
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Free web chat (coming soon)
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Free Hosting for two years
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												SEO - OnPage
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Boost visibility with targeted On-page SEO to attract
+												ideal patients
+											</p>
+										</div>
+
+										<div class="grid gap-4">
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														SEO audit of your website</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Meta tags and keyword optimization
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Geography based keywords
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Compare competitor keywords
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														100 content topic ideas
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Local Search
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Maximize your online visibility to better connect with
+												prospects
+											</p>
+										</div>
+
+										<div class="grid grid-rows-1 gap-4">
+											<ul class="grid grid-cols-3 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Appear in localized searches (i.e. "doctor near me")</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Create Local listing on Google using address, photos
+														and hours.
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Validate Google page
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Directory listing
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Update 70+ sites such Healthgrades, Vitals, Foursquare,
+												WebMD, with your information including address, contact
+												information and office hours
+											</p>
+										</div>
+
+										<div class="grid grid-rows-1 gap-4">
+											<ul class="grid grid-cols-3 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Claim or create profiles in directories</span
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+							id="hs-bordered-heading-two"
+						>
+							<button
+								class="hs-accordion-toggle hs-accordion-active:text-[#FD3E81] inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-bordered-collapse-two"
+							>
+								<svg
+									class="hs-accordion-active:hidden hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 8.85999L14.5 8.85998"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+									<path
+										d="M8 15.36L8 2.35999"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 8.85999L14.5 8.85998"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								NURTURE PLAN
+							</button>
+							<div
+								id="hs-basic-bordered-collapse-two"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-bordered-heading-two"
+							>
+								<div class="p-6 pt-2 py-8 grid gap-8">
+									<div class="flex justify-between items-center">
+										<p class="">
+											<span
+												class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+												><span class="text-xl">$</span>250</span
+											><span class="text-xl">/month</span>
+										</p>
+
+										<ButtonDefaultHeader
+											text="Nurture your practice"
+											style="margin: 0;"
+										/>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Social media
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Keep your social profiles full of fresh, engaging
+												content
+											</p>
+										</div>
+
+										<div class="grid grid-rows-1 gap-4">
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Build Facebook and Instagram accounts</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Publish informational content (10 posts/month)
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												SEO - Off Page
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Establish credibility with Search engines and rank
+												higher in search results and get found more often.
+											</p>
+										</div>
+
+										<div class="grid gap-4">
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Analyze backlinks for your competition</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Build new links
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Managed Reviews
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												We build your online reputation through patient reviews
+												and manage reviews
+											</p>
+										</div>
+
+										<div class="grid grid-rows-1 gap-4">
+											<ul class="grid grid-cols-3 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Email or text patients get reviews after appointment</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Respond to positive and negative patient reviews
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Validate Google page
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Manage inbound Chat
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Enhance User Interaction and Increase Conversion Rates
+												for Optimal Results
+											</p>
+										</div>
+
+										<div class="grid grid-rows-1 gap-4">
+											<ul class="grid grid-cols-3 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Increase website conversion rates</span
+													>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Capture lead information for follow-up</span
+													>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Engage with website visitors in real-time
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+							id="hs-bordered-heading-two"
+						>
+							<button
+								class="hs-accordion-toggle hs-accordion-active:text-[#FD3E81] inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-bordered-collapse-two"
+							>
+								<svg
+									class="hs-accordion-active:hidden hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 8.85999L14.5 8.85998"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+									<path
+										d="M8 15.36L8 2.35999"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 8.85999L14.5 8.85998"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								GROWTH PLAN
+							</button>
+							<div
+								id="hs-basic-bordered-collapse-two"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-bordered-heading-two"
+							>
+								<div class="p-6 pt-2 py-8 grid gap-8">
+									<div class="flex justify-between items-center">
+										<p class="">
+											<span
+												class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+												><span class="text-xl">$</span>500</span
+											><span class="text-xl">/month</span>
+										</p>
+
+										<ButtonDefaultHeader
+											text="Start Growing Now"
+											style="margin: 0;"
+										/>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Advertising
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Give your growth a turbo boost and acquire patients at
+												the fastest rate.
+											</p>
+										</div>
+
+										<div class="grid grid-rows-1 gap-4">
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Build ad campaigns with keywords, bids and
+														optimizations</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Custom landing page to identify prospects
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Emails for nurturing prospects
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Print Ads in local newspaper and church bulletin
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Promotions
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Establish credibility with Search engines and rank
+												higher in search results and get found more often.
+											</p>
+										</div>
+
+										<div class="grid gap-4">
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Analyze customer lifetime value</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Identify profitable services
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Build a new promotion each month
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Email Campaigns
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Remind patients to do vaccines and follow ups. Send
+												custom marketing and offers to your patients to increase
+												utilization and revenue.
+											</p>
+										</div>
+
+										<div class="grid grid-rows-1 gap-4">
+											<ul class="grid grid-cols-3 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Integrated with your EMR</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Up to 10,000 emails each month
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Up to 2 new email campaigns
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid gap-4">
+										<div>
+											<h3
+												class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+											>
+												Custom content - 2 blogs/month
+											</h3>
+											<p class="mt-1 text-gray-600 dark:text-gray-400">
+												Add fresh content that is custom created for you.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+							id="hs-bordered-heading-two"
+						>
+							<button
+								class="hs-accordion-toggle hs-accordion-active:text-[#FD3E81] inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition py-4 px-5 hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-bordered-collapse-two"
+							>
+								<svg
+									class="hs-accordion-active:hidden hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 8.85999L14.5 8.85998"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+									<path
+										d="M8 15.36L8 2.35999"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hs-accordion-active:text-[#FD3E81] hs-accordion-active:group-hover:text-[#FD3E81] hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 8.85999L14.5 8.85998"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								OFFLINE MARKETING PLAN
+							</button>
+							<div
+								id="hs-basic-bordered-collapse-two"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-bordered-heading-two"
+							>
+								<div class="p-6 pt-2 py-8 grid gap-8">
+									<div class="flex justify-between items-center">
+										<p class="">
+											<span
+												class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+												><span class="text-xl">$</span>500</span
+											><span class="text-xl">/month</span>
+										</p>
+
+										<ButtonDefaultHeader
+											text="Start Connecting Now"
+											style="margin: 0;"
+										/>
+									</div>
+
+									<div class="grid gap-4">
+										<div class="grid grid-rows-2 gap-4">
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Designs that stand out</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Homepage, Providers, Contact Us
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Service page (up to 8)
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Testimonials page
+													</span>
+												</li>
+											</ul>
+											<ul class="grid grid-cols-4 gap-4">
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Dynamically display top Google reviews</span
+													>
+												</li>
+
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Patient self service (coming soon)
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Free web chat (coming soon)
+													</span>
+												</li>
+												<li class="flex space-x-1">
+													<svg
+														class="flex-shrink-0 h-6 w-6 text-[#FD3E81]"
+														width="16"
+														height="16"
+														viewBox="0 0 16 16"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+															fill="currentColor"></path>
+													</svg>
+													<span class="text-gray-800 dark:text-gray-400">
+														Free Hosting for two years
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<BannerFooterSection />
+			</div>
+		</div>
+
+		<!-- Calendly inline widget begin -->
+		<div class="calendly-widget-overlay calendly-close-button">
+			<div
+				class="calendly-inline-widget"
+				style="min-width: 320px; height: 680px"
+				data-auto-load="false"
+			>
+				<h2 class="title is-size-5 calendly-widget-close">Close X</h2>
+				<script
+					type="text/javascript"
+					src="https://assets.calendly.com/assets/external/widget.js"
+				></script>
+				<script>
+					Calendly.initInlineWidget({
+						url: 'https://calendly.com/trillium-vineeth/primrose-discovery',
+					});
+				</script>
+			</div>
+		</div>
+		<!-- Calendly inline widget end -->
+
+		<script>
+			const calendlyCloseButton = document.querySelector(
+				'.calendly-close-button'
+			);
+
+			calendlyCloseButton.addEventListener('click', () => {
+				document.querySelector('.calendly-widget-overlay').style.display =
+					'none';
+			});
+
+			const calendlyOpenButton = document.querySelectorAll(
+				'.calendly-open-button'
+			);
+
+			// Handle clicks on each button.
+			calendlyOpenButton.forEach((button) => {
+				button.addEventListener('click', () => {
+					document.querySelector('.calendly-widget-overlay').style.display =
+						'block';
+				});
+			});
+		</script>
+	</main>
+</BaseLayout>
