@@ -29,7 +29,12 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 					Elevate your online presence and attract more patients to your
 					practice with our proven digital marketing strategies
 				</p>
-				<ButtonDefault text="Get Started" />
+				<button
+					type="button"
+					class="py-3 px-4 mt-6 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+				>
+					<a onclick="openCalendlyWidget()" href="#calendly"> Get Started</a>
+				</button>
 			</div>
 			<!-- End Col -->
 

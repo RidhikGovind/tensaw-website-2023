@@ -122,7 +122,12 @@ import ButtonDefault from './ButtonDefaultHeader.astro';
 					href="/about-us"
 					aria-current="page">About us</a
 				>
-				<ButtonDefault text="Get started" />
+				<button
+					type="button"
+					class="py-3 px-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+				>
+					<a onclick="openCalendlyWidget()" href="#calendly"> Get Started</a>
+				</button>
 			</div>
 		</div>
 	</nav>

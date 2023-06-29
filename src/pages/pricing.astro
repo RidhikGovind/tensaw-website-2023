@@ -1,8 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ButtonDefault from '../components/ButtonDefault.astro';
 import BannerFooterSection from '../components/BannerFooterSection.astro';
-import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 ---
 
 <script
@@ -120,7 +118,14 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 								Contact us
 							</a> -->
 
-							<ButtonDefault text="Start with Basics" />
+							<button
+								type="button"
+								class="py-3 px-4 mt-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+							>
+								<a onclick="openCalendlyWidget()" href="#calendly">
+									Start with Basics
+								</a>
+							</button>
 
 							<ul class="mt-7 space-y-2.5 text-sm">
 								<li class="flex space-x-2">
@@ -182,7 +187,14 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 								Transform Leads into Loyal Customers.
 							</p>
 
-							<ButtonDefault text="Nurture your practice" />
+							<button
+								type="button"
+								class="py-3 px-4 mt-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+							>
+								<a onclick="openCalendlyWidget()" href="#calendly">
+									Nurture your practice
+								</a>
+							</button>
 
 							<ul class="mt-7 space-y-2.5 text-sm">
 								<li class="flex space-x-2">
@@ -238,7 +250,14 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 								Unlock Your Clinic's Full Potential.
 							</p>
 
-							<ButtonDefault text="Start your growth now" />
+							<button
+								type="button"
+								class="py-3 px-4 mt-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+							>
+								<a onclick="openCalendlyWidget()" href="#calendly">
+									Start your growth now
+								</a>
+							</button>
 
 							<ul class="mt-7 space-y-2.5 text-sm">
 								<li class="flex space-x-2">
@@ -299,7 +318,14 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 								Boost Your Brand with Strategic Offline Marketing
 							</p>
 
-							<ButtonDefault text="Start Connecting Now" />
+							<button
+								type="button"
+								class="py-3 px-4 mt-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+							>
+								<a onclick="openCalendlyWidget()" href="#calendly">
+									Start Connecting Now
+								</a>
+							</button>
 
 							<ul class="mt-7 space-y-2.5 text-sm">
 								<li class="flex space-x-2">
@@ -424,10 +450,14 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 										><span class="text-xl">/month</span>
 									</p>
 
-									<ButtonDefaultHeader
-										text="Start with Basics"
-										style="margin: 0;"
-									/>
+									<button
+										type="button"
+										class="py-3 px-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+									>
+										<a onclick="openCalendlyWidget()" href="#calendly">
+											Start with Basics
+										</a>
+									</button>
 								</div>
 
 								<div class="grid gap-4">
@@ -862,10 +892,14 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 										><span class="text-xl">/month</span>
 									</p>
 
-									<ButtonDefaultHeader
-										text="Nurture your practice"
-										style="margin: 0;"
-									/>
+									<button
+										type="button"
+										class="py-3 px-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+									>
+										<a onclick="openCalendlyWidget()" href="#calendly">
+											Nurture your practice
+										</a>
+									</button>
 								</div>
 
 								<div class="grid gap-4">
@@ -1176,10 +1210,14 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 										><span class="text-xl">/month</span>
 									</p>
 
-									<ButtonDefaultHeader
-										text="Start Growing Now"
-										style="margin: 0;"
-									/>
+									<button
+										type="button"
+										class="py-3 px-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+									>
+										<a onclick="openCalendlyWidget()" href="#calendly">
+											Start Growing Now
+										</a>
+									</button>
 								</div>
 
 								<div class="grid gap-4">
@@ -1487,10 +1525,14 @@ import ButtonDefaultHeader from '../components/ButtonDefaultHeader.astro';
 										><span class="text-xl">/month</span>
 									</p>
 
-									<ButtonDefaultHeader
-										text="Start Connecting Now"
-										style="margin: 0;"
-									/>
+									<button
+										type="button"
+										class="py-3 px-4 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+									>
+										<a onclick="openCalendlyWidget()" href="#calendly">
+											Start Connecting Now
+										</a>
+									</button>
 								</div>
 
 								<div class="grid gap-4">

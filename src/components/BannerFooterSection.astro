@@ -65,9 +65,14 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 						Empower Your Practice with Effective Patient Tools for Sustainable
 						Growth
 					</p>
-				</div>x
+				</div>
 
-				<ButtonDefault text="Get Started" />
+				<button
+					type="button"
+					class="py-3 px-4 mt-6 inline-flex calendly-open-button justify-center items-center gap-2 font-medium rounded-md border border-transparent bg-[#FD3E81] text-white hover:bg-[#E43975] focus:outline-none focus:ring-2 focus:ring-[#E43975] focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+				>
+					<a onclick="openCalendlyWidget()" href="#calendly"> Get Started</a>
+				</button>
 			</div>
 
 			<div class="banner-ctaContainer--Overlay"></div>
@@ -171,7 +176,7 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 					<p>
 						<a
 							class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-							href="#">About us</a
+							href="/about-us">About us</a
 						>
 					</p>
 				</div>
@@ -296,20 +301,7 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 		</script>
 	</div>
 </div>
-<!-- Calendly inline widget end -->
 
-<!-- <script>
-	const calendlyOpenButton = document.querySelector('.calendly-open-button');
-
-	const calendlyCloseButton = document.querySelector('.calendly-close-button');
-
-	calendlyOpenButton.addEventListener('click', () => {
-		document.querySelector('.calendly-widget-overlay').style.display = 'block';
-	});
-	calendlyCloseButton.addEventListener('click', () => {
-		document.querySelector('.calendly-widget-overlay').style.display = 'none';
-	});
-</script> -->
 
 <script>
 	const calendlyCloseButton = document.querySelector('.calendly-close-button');
