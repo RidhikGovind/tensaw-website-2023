@@ -61,7 +61,7 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 				<!-- End Title -->
 
 				<div class="mt-5 max-w-sm text-center mx-auto">
-					<p class="text-lg text-white">
+					<p class="md:text-lg text-white">
 						Empower Your Practice with Effective Patient Tools for Sustainable
 						Growth
 					</p>
@@ -282,41 +282,3 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 	</footer>
 </div>
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-widget-overlay calendly-close-button" id="">
-	<div
-		class="calendly-inline-widget"
-		style="min-width: 320px; height: 680px"
-		data-auto-load="false"
-	>
-		<h2 class="title is-size-5 calendly-widget-close">Close X</h2>
-		<script
-			type="text/javascript"
-			src="https://assets.calendly.com/assets/external/widget.js"
-		></script>
-		<script>
-			Calendly.initInlineWidget({
-				url: 'https://calendly.com/trillium-vineeth/primrose-discovery',
-			});
-		</script>
-	</div>
-</div>
-
-
-<script>
-	const calendlyCloseButton = document.querySelector('.calendly-close-button');
-
-	calendlyCloseButton.addEventListener('click', () => {
-		document.querySelector('.calendly-widget-overlay').style.display = 'none';
-	});
-
-	const calendlyOpenButton = document.querySelectorAll('.calendly-open-button');
-
-	// Handle clicks on each button.
-	calendlyOpenButton.forEach((button) => {
-		button.addEventListener('click', () => {
-			document.querySelector('.calendly-widget-overlay').style.display =
-				'block';
-		});
-	});
-</script>
