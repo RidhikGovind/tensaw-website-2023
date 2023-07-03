@@ -1,5 +1,6 @@
 ---
-import ButtonDefault from '../components/ButtonDefault.astro';
+const date = new Date().getFullYear();
+console.log(date);
 ---
 
 <script
@@ -98,7 +99,7 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 				<p
 					class="mt-3 ml-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400"
 				>
-					© 2023 Tensaw.health
+					© {date} Primrose.health Tensaw.health
 				</p>
 			</div>
 			<!-- End Col -->
@@ -216,7 +217,7 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 						<p
 							class="mt-3 ml-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400"
 						>
-							© 2023 Primrose.health
+							© {date} Primrose.health
 						</p>
 					</div>
 
@@ -281,4 +282,3 @@ import ButtonDefault from '../components/ButtonDefault.astro';
 		</div>
 	</footer>
 </div>
-
