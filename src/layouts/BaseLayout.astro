@@ -138,3 +138,42 @@ const { title } = Astro.props;
 	src="//js-na1.hs-scripts.com/20359032.js"
 ></script> -->
 <!-- End of HubSpot Embed Code -->
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-widget-overlay calendly-close-button">
+	<div
+		class="calendly-inline-widget"
+		style="min-width: 320px; height: 680px"
+		data-auto-load="false"
+	>
+		<h2 class="title is-size-5 calendly-widget-close">Close X</h2>
+		<script
+			type="text/javascript"
+			src="https://assets.calendly.com/assets/external/widget.js"
+		></script>
+		<script>
+			Calendly.initInlineWidget({
+				url: 'https://calendly.com/trillium-vineeth/tensaw-discovery',
+			});
+		</script>
+	</div>
+</div>
+<!-- Calendly inline widget end -->
+
+<script>
+	const calendlyCloseButton = document.querySelector('.calendly-close-button');
+
+	calendlyCloseButton.addEventListener('click', () => {
+		document.querySelector('.calendly-widget-overlay').style.display = 'none';
+	});
+
+	const calendlyOpenButton = document.querySelectorAll('.calendly-open-button');
+
+	// Handle clicks on each button.
+	calendlyOpenButton.forEach((button) => {
+		button.addEventListener('click', () => {
+			document.querySelector('.calendly-widget-overlay').style.display =
+				'block';
+		});
+	});
+</script>
